@@ -21,7 +21,7 @@ x_train, x_test, y_train, y_test     = sklearn.model_selection.train_test_split(
 """""
 best = 0
 while(best < .95):
-    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=.1)
+    
 
     linear = linear_model.LinearRegression()
     linear.fit(x_train, y_train) #fits both data sets in x y plane
